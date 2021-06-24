@@ -12,8 +12,6 @@ namespace covidStats
             InitializeComponent();
             datePicker.Value = DateTime.Now;
             displayStats();
-            response = Unirest.post("https://localhost:44342/Api/Hello").field("name", "Juliet").asString();
-            label2.Text = response.Body;
         }
 
         private void datePicker_ValueChanged(object sender, EventArgs e)
